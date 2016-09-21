@@ -1,0 +1,2 @@
+require("config",function(n,e){function r(){return i(t,arguments)}var t={en:{},fr:{}},i=require("$").intl;e.exports={calendar:["23092016","30092016","07102016","14102016","04112016","18112016","25112016","02122016","09122016","16122016"],go:[{Agathe:5},{Alois:5},{Hortense:5},{Valentin:5}],back:[{Anna:4,Alois:1},{Hortense:5},{Valentin:5}],restrictions:{Alois:{30092016:""},Valentin:{30092016:""}},scores:{Hortense:5,Valentin:5}},e.exports._=r});
+//# sourceMappingURL=config.js.map

@@ -18,5 +18,5 @@ Pour chaque scéance de basket:
   Faire de même pour le retour.
 ```
 
-Le nombre de points à considéré pour un groupe de voitures et le nombre de point de la voiture en ayant le plus.
+Le nombre de points à considérer pour un groupe de voitures est le nombre de point de la voiture qui en a le moins.
 
