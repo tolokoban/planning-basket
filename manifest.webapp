@@ -1,0 +1,14 @@
+{
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "tolokoban",
+    "url": "https://github.com/tolokoban/planning-basket"
+  },
+  "icons": {
+    "128": "/icon-128.png",
+    "512": "/icon-512.png"
+  },
+  "name": "planning-basket",
+  "version": "0.0.1",
+  "description": "Planning pour emener les enfants au basket en minimisant le nombre de voitures."
+}
