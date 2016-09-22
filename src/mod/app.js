@@ -6,7 +6,14 @@ var Config = require("config");
 
 exports.start = function() {
     var body = document.body;
-    var table = $.div('table');
+    var table = $.div('table', [
+        $.div('header', [$.div(["Date"]), $.div(["Aller"]), $.div(["Retour"])]),
+        $.div([
+            $.div(["16 / 09 / 2016"]),
+            $.div(["Valentin"]),
+            $.div(["Hortense"])
+        ])
+    ]);
     $.add( body, table );
 
     Config.calendar.forEach(function (day) {
