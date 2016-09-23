@@ -23,16 +23,38 @@ exports.start = function() {
         // Aller.
         team = findBestTeam( Config.go, day, 'G' );
         names = getTeamMembersNamesAsArray( team );
-        $.add( row, $.div([names.join(", ")]) );
+        $.add( row, getTeamCaption( team ) );
         allocatePoints( team );
         // Retour.
         team = findBestTeam( Config.back, day, 'B' );
         names = getTeamMembersNamesAsArray( team );
-        $.add( row, $.div([names.join(", ")]) );
+        $.add( row, getTeamCaption( team ) );
         allocatePoints( team );
         // Debug.
         $.add( row, $.div('debug', [JSON.stringify(Config.scores)]) );        
     });
+};
+
+
+/**
+ * Retourner un DIV qui affiche les noms des membres d'une équipe avec
+ * le nombre d'enfants transportés.
+ */
+function getTeamCaption( team ) {
+    var k, v;
+    var div = $.div();
+    var first = true;
+    for( k in team ) {
+        v = team[k];
+        if (first) first = false;
+        else $.add( div, $.tag('span' , [', ']) );
+        $.add( 
+            div,
+            $.tag('span', [k]),
+            $.tag('span', 'grey', [' (' + v + ')'])
+        );
+    }
+    return div;
 };
 
 

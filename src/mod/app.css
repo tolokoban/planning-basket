@@ -44,3 +44,7 @@ div.table > div > div.debug {
 div.table > div:hover > div.debug {
     display: table-cell;
 }
+
+span.grey {
+    opacity: .35;
+}
