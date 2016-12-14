@@ -2,11 +2,11 @@ exports.config={
     name:"planning-basket",
     description:"Planning pour emener les enfants au basket en minimisant le nombre de voitures.",
     author:"tolokoban",
-    version:"0.0.1",
+    version:"0.0.2",
     major:0,
     minor:0,
-    revision:1,
-    date:new Date(2016,8,21,21,26,35)
+    revision:2,
+    date:new Date(2016,11,14,20,6,8)
 };
 var currentLang = null;
 exports.lang = function(lang) {

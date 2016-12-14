@@ -8,11 +8,11 @@ exports.start = function() {
     var body = document.body;
     var table = $.div('table', [
         $.div('header', [$.div(["Date"]), $.div(["Aller"]), $.div(["Retour"])]),
-        $.div([
-            $.div(["16 / 09 / 2016"]),
+        /*$.div([
+            $.div(["16 / 12 / 2016"]),
             $.div(["Valentin"]),
             $.div(["Hortense"])
-        ])
+        ])*/
     ]);
     $.add( body, table );
 
