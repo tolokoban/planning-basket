@@ -1,13 +1,4 @@
-exports.config={
-    name:"planning-basket",
-    description:"Planning pour emener les enfants au basket en minimisant le nombre de voitures.",
-    author:"tolokoban",
-    version:"0.0.2",
-    major:0,
-    minor:0,
-    revision:2,
-    date:new Date(2016,11,14,20,6,8)
-};
+exports.config={"name":"\"planning-basket\"","description":"\"Planning pour emener les enfants au basket en minimisant le nombre de voitures.\"","author":"\"tolokoban\"","version":"\"0.0.8\"","major":"0","minor":"0","revision":"8","date":"2017-03-13T19:50:43.000Z","consts":{}};
 var currentLang = null;
 exports.lang = function(lang) {
     if (lang === undefined) {
@@ -33,17 +24,23 @@ exports.lang = function(lang) {
 };
 exports.intl = function(words, params) {
     var dic = words[exports.lang()],
-    k = params[0],
-    txt, newTxt, i, c, lastIdx, pos;
+        k = params[0],
+        txt, newTxt, i, c, lastIdx, pos;
+    var defLang;
+    for( defLang in words ) break;
+    if( !defLang ) return k;
     if (!dic) {
-        //console.error("Missing internationalization for language : \"" + exports.lang() + "\"!");
-        return k;
+        dic = words[defLang];
+        if( !dic ) {
+            return k;
+        }
     }
     txt = dic[k];
-    if (!txt) {
-        //console.error("Missing internationalization [" + exports.lang() + "]: \"" + k + "\"!");
-        return k;
+    if( !txt ) {
+        dic = words[defLang];
+        txt = dic[k];
     }
+    if (!txt) return k;
     if (params.length > 1) {
         newTxt = "";
         lastIdx = 0;

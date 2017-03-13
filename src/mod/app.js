@@ -31,7 +31,7 @@ exports.start = function() {
         $.add( row, getTeamCaption( team ) );
         allocatePoints( team );
         // Debug.
-        $.add( row, $.div('debug', [JSON.stringify(Config.scores)]) );        
+        $.add( row, $.div('debug', [JSON.stringify(Config.scores)]) );
     });
 };
 
@@ -48,7 +48,7 @@ function getTeamCaption( team ) {
         v = team[k];
         if (first) first = false;
         else $.add( div, $.tag('span' , [', ']) );
-        $.add( 
+        $.add(
             div,
             $.tag('span', [k]),
             $.tag('span', 'grey', [' (' + v + ')'])
@@ -93,7 +93,7 @@ function getTeamMembersNamesAsArray( team ) {
  * Retourne l'équipe qui a le moins de points.
  * Le nombre de points d'une équipe  correspond au nombre de points du
  * membre qui en a le plus.
- * 
+ *
  * @param {string} type - Vaut "G" pour l'aller et "B" pour le retour.
  */
 function findBestTeam( teams, day, type ) {
