@@ -1,4 +1,4 @@
-exports.config={"name":"\"planning-basket\"","description":"\"Planning pour emener les enfants au basket en minimisant le nombre de voitures.\"","author":"\"tolokoban\"","version":"\"0.0.8\"","major":"0","minor":"0","revision":"8","date":"2017-03-13T19:50:43.000Z","consts":{}};
+exports.config={"name":"\"planning-basket\"","description":"\"Planning pour emener les enfants au basket en minimisant le nombre de voitures.\"","author":"\"tolokoban\"","version":"\"0.0.9\"","major":"0","minor":"0","revision":"9","date":"2017-05-03T19:56:40.000Z","consts":{}};
 var currentLang = null;
 exports.lang = function(lang) {
     if (lang === undefined) {
